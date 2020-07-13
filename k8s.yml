@@ -13,7 +13,7 @@ spec:
         app: abhay
     spec:
       containers:
-      - image: okteto/:python
+      - image: okteto/python:3
         name: abhay
 
 ---

@@ -1,5 +1,5 @@
 name: abhay
-image: okteto/:python-dev
+image: okteto/python:3
 command: [ "python", "app.py"]
 environment:
   - FLASK_ENV=development
