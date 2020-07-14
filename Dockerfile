@@ -5,6 +5,9 @@ WORKDIR /app
 COPY requirements.txt requirements.txt
 RUN pip install -r requirements.txt
 ADD app.py app.py
+COPY . /app
+ADD sentiment_labeled_name_category_final.csv sentiment_labeled_name_category_final.csv
+ADD merged_sentiments.csv merged_sentiments.csv
 CMD ["python", "app.py" ]
 
 #######################################
